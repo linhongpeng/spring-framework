@@ -1,0 +1,20 @@
+description = "Spring Debug"
+
+apply plugin: "kotlin"
+
+dependencies {
+    //region lombok
+    compileOnly 'org.projectlombok:lombok:1.18.4'
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
+    testCompileOnly 'org.projectlombok:lombok:1.18.4'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.4'
+    //endregion
+
+    //region spring-context
+    api(project(":spring-context"))
+    //endregion
+}
+
+/**
+ * 参考了：基于IDEA的Spring源码调试 https://www.csdn.net/tags/MtTaIgwsNjc4OTEtYmxvZwO0O0OO0O0O.html
+ */

@@ -1,0 +1,28 @@
+package com.hp;
+
+/**
+ * @author linhongpeng
+ * @date 2022-06-03 23:04:26
+ */
+public class HelloWorld {
+
+	private String user;
+
+	public HelloWorld() {
+		System.out.println("HelloWorld's constructor...");
+	}
+
+	public void setUser(String user) {
+		System.out.println("setUser:" + user);
+		this.user = user;
+	}
+
+	public HelloWorld(String user) {
+		this.user = user;
+	}
+
+	public void hello(){
+		System.out.println("Hello: " + this.user);
+	}
+
+}

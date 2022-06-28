@@ -1,12 +1,16 @@
 package com.hp;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author linhongpeng
  */
-public class Main {
+public class Test {
+
+	private final static Log logger = LogFactory.getLog(Test.class);
 
 	public static void main(String[] args) {
 		//1. 创建 Spring 的 IOC 容器
